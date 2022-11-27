@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+header {
+    padding: 4%;
+    background-color: rgb(185, 233, 244);
+}
+
+.textBlock {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.numInputs {
+    padding-top: 5%;
+}
+
+#returnedRadius {
+    padding-top: 3%;
+    font-size: 50px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

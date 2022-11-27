@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurningRadiusCalculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Calculate Your Motorcycle's Turning Radius</h1>
+        <a href="#calculateInputs">
+            <button>Go To Calculator</button>
+        </a>
+        <a href="#dataTable">
+            <button>Motorcycle Table</button>
+        </a>
+    </header>
+    <div class="textBlock">
+
+        <h3>Directions</h3>
+
+
+        <img src="" alt="">
+        <p>Step One: Get the sttering wheel angle.
+            <br>
+            With your front tire facing straight ahead as if you were driving going straight down the road.
+            Turn your handlebars all the way to the left or right until they hit the steering stops. Measure this angle.
+            Most motorcycles should be between 40-50&deg;.
+            <img src="" alt="">
+            <br>Step Two: Get your wheelbase measurement in inches
+            <br>Draw a straight line from your axles to the ground and measure this distance between these two points,
+            in inches.
+            Note, changing the height in yor triple clamps can change the wheelbase and your steering angle, therefore
+            it will effect your turning radius
+
+            <br> This Calculator is able to account for lean angle upto 45&deg;s with handlebars at full lock. Most
+            trials motorcycles can lean this far however, one is unlikely to lean an enduro bike or street bike further
+            than 60&deg; with a full lock turn
+    </div>
+    </p>
+
+
+    <div class="numInputs">
+        Steering Wheel Angle in degrees (&deg;) <input id='wheelAngle' type="number" placeholder="46"></input>
+
+        Wheelbase in inches <input id="wheelbase" type="number" placeholder="67"></input>
+
+        Lean Angle <select id="leanAngle">
+            <option value="90">90&deg;</option>
+            <option value="60">60&deg;</option>
+            <option value="45">45&deg;</option>
+        </select>
+
+    </div>
+
+    <a id="calculateInputs"></a>
+    <div>
+        <button id="btn">Calculate</button>
+    </div>
+    </a>
+    <p> Your calculated turning radius is:
+    <div id="returnedRadius"></div>
+    </p>
+
+    <a id="dataTable">
+        <table>
+            <tr>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Steering Angle</th>
+                <th>Wheelbase (in inches)</th>
+            </tr>
+            <tr>
+                <td>Sherco</td>
+                <td>300SE Factory</td>
+                <td>2022</td>
+                <td>46&deg;</td>
+                <td>58.2</td>
+            </tr>
+
+        </table>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>
