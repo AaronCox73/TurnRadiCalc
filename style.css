@@ -29,6 +29,11 @@ header {
 img {
     width: 400px;
     height: 400px;
+    padding-top: 2%;
+}
+
+#finalText {
+    padding-top: 10%;
 }
 
 table {
